@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		84422F741F0A1EB3005A404F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84422F731F0A1EB3005A404F /* AppDelegate.swift */; };
-		84422F761F0A1EB3005A404F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84422F751F0A1EB3005A404F /* ViewController.swift */; };
 		84422F791F0A1EB3005A404F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84422F771F0A1EB3005A404F /* Main.storyboard */; };
 		84422F7B1F0A1EB3005A404F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84422F7A1F0A1EB3005A404F /* Assets.xcassets */; };
 		84422F7E1F0A1EB3005A404F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84422F7C1F0A1EB3005A404F /* LaunchScreen.storyboard */; };
+		848265371F0A3252008DC915 /* CoreStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848265361F0A3252008DC915 /* CoreStore.framework */; };
+		8482653B1F0A32FB008DC915 /* POC-CoreStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848265391F0A32FB008DC915 /* POC-CoreStore.xcdatamodeld */; };
+		8482653D1F0A4A7C008DC915 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482653C1F0A4A7C008DC915 /* EmployeeListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84422F701F0A1EB3005A404F /* POC-CoreStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC-CoreStore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84422F731F0A1EB3005A404F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84422F751F0A1EB3005A404F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84422F781F0A1EB3005A404F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84422F7A1F0A1EB3005A404F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84422F7D1F0A1EB3005A404F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84422F7F1F0A1EB3005A404F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848265361F0A3252008DC915 /* CoreStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreStore.framework; path = Carthage/Build/iOS/CoreStore.framework; sourceTree = "<group>"; };
+		8482653A1F0A32FB008DC915 /* POC-CoreStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "POC-CoreStore.xcdatamodel"; sourceTree = "<group>"; };
+		8482653C1F0A4A7C008DC915 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848265371F0A3252008DC915 /* CoreStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				84422F721F0A1EB3005A404F /* POC-CoreStore */,
 				84422F711F0A1EB3005A404F /* Products */,
+				848265351F0A3252008DC915 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +61,22 @@
 			isa = PBXGroup;
 			children = (
 				84422F731F0A1EB3005A404F /* AppDelegate.swift */,
-				84422F751F0A1EB3005A404F /* ViewController.swift */,
 				84422F771F0A1EB3005A404F /* Main.storyboard */,
 				84422F7A1F0A1EB3005A404F /* Assets.xcassets */,
 				84422F7C1F0A1EB3005A404F /* LaunchScreen.storyboard */,
 				84422F7F1F0A1EB3005A404F /* Info.plist */,
+				848265391F0A32FB008DC915 /* POC-CoreStore.xcdatamodeld */,
+				8482653C1F0A4A7C008DC915 /* EmployeeListViewController.swift */,
 			);
 			path = "POC-CoreStore";
+			sourceTree = "<group>";
+		};
+		848265351F0A3252008DC915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848265361F0A3252008DC915 /* CoreStore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +89,7 @@
 				84422F6C1F0A1EB3005A404F /* Sources */,
 				84422F6D1F0A1EB3005A404F /* Frameworks */,
 				84422F6E1F0A1EB3005A404F /* Resources */,
+				848265381F0A325A008DC915 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,13 +148,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		848265381F0A325A008DC915 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CoreStore.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84422F6C1F0A1EB3005A404F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84422F761F0A1EB3005A404F /* ViewController.swift in Sources */,
 				84422F741F0A1EB3005A404F /* AppDelegate.swift in Sources */,
+				8482653B1F0A32FB008DC915 /* POC-CoreStore.xcdatamodeld in Sources */,
+				8482653D1F0A4A7C008DC915 /* EmployeeListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +296,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4G2KHJ47KE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "POC-CoreStore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.v2solutions.POC-CoreStore";
@@ -275,6 +313,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4G2KHJ47KE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "POC-CoreStore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.v2solutions.POC-CoreStore";
@@ -302,8 +344,22 @@
 				84422F841F0A1EB3005A404F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		848265391F0A32FB008DC915 /* POC-CoreStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8482653A1F0A32FB008DC915 /* POC-CoreStore.xcdatamodel */,
+			);
+			currentVersion = 8482653A1F0A32FB008DC915 /* POC-CoreStore.xcdatamodel */;
+			path = "POC-CoreStore.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 84422F681F0A1EB3005A404F /* Project object */;
 }
