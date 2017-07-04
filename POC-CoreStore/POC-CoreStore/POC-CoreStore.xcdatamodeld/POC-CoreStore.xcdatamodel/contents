@@ -11,6 +11,7 @@
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="hireDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="identity" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="employee" inverseEntity="Department" syncable="YES"/>
         <relationship name="salary" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Salary" inverseName="employee" inverseEntity="Salary" syncable="YES"/>
@@ -22,8 +23,8 @@
         <relationship name="employee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="salary" inverseEntity="Employee" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Employee" positionX="-252" positionY="-138" width="128" height="165"/>
         <element name="Department" positionX="-72" positionY="-135" width="128" height="90"/>
+        <element name="Employee" positionX="-252" positionY="-138" width="128" height="180"/>
         <element name="Salary" positionX="-72" positionY="-24" width="128" height="105"/>
     </elements>
 </model>
